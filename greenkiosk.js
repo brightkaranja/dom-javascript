@@ -31,6 +31,60 @@ const fruitList = document.createElement('li');
 fruitList.textContent = 'Apple';
 fruList.appendChild(fruitList);
 
+const style = document.createElement('style');
+style.textContent = `
+     h3 {
+        text-transform: uppercase;
+        color: #2f4f4f;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+       
+      }
+      li {
+        font-size: 30px;
+        align-items: center;
+        margin: 8px 0;
+        width:30vw;
+        background-color: rgb(250, 237, 237);
+        border-radius: 25px;
+        padding: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+      }
+      li:hover {
+        transform: scale(1.01);
+        background: gold;
+      }
+      li img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+        #click-button{
+    padding: 12px 16px;
+    border: none;
+    background-color:blue;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+#click-on-button{
+    padding: 12px 16px;
+    border: none;
+    background-color:blue;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+    `;
+document.head.appendChild(style);
+
+
 fruitimg = document.createElement('img')
 fruitimg.src = 'https://producemadesimple.ca/wp-content/uploads/2023/08/apples-Ontario-fruits.jpg'
 fruitList.append(fruitimg);
@@ -140,7 +194,7 @@ newParagraph.style.padding = '12px';
 
 const clickOnButton = document.getElementById('click-on-button');
 
-clickOnButton.addEventListener('click', ()=>{
+clickOnButton.addEventListener('click', () => {
     clickOnButton.textContent = "Taste Now!!!";
     clickOnButton.style.backgroundColor = "green";
 
@@ -153,7 +207,7 @@ clickOnButton.onclick = () => {
 
 const clickButton = document.getElementById('click-button');
 
-clickButton.addEventListener('click', ()=>{
+clickButton.addEventListener('click', () => {
     clickButton.textContent = "Try Now!!";
     clickButton.style.backgroundColor = "green";
 
