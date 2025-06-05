@@ -46,7 +46,7 @@ style.textContent = `
         font-size: 30px;
         align-items: center;
         margin: 8px 0;
-        width:30vw;
+        width:22vw;
         background-color: rgb(250, 237, 237);
         border-radius: 25px;
         padding: 8px;
