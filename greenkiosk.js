@@ -69,41 +69,59 @@ subheading.style.backgroundColor = "white";
 subheading.style.padding = '12px';
 
 
-const mango = document.getElementById('mango');
-     mango.style.width = '220px';
-     mango.style.height = '245px';
-     mango.style.borderRadius = '25px';
-     mango.style.border = '2px solid red';
+const mango = document.getElementById('mangoName');
+mangoimg = document.createElement('img')
+mangoimg.src = 'https://www.biovie.fr/img/cms/histoire-origine-mangue.png';
+mango.append(mangoimg);
+mangoimg.style.width = '220px';
+mangoimg.style.height = '245px';
+mangoimg.style.borderRadius = '25px';
+mangoimg.style.border = '2px solid red';
 
-const banana = document.getElementById('banana');
-     banana.style.width = '200px';
-     banana.style.height = '245px';
-     banana.style.borderRadius = '25px';
-     banana.style.border = '2px solid red';
+const banana = document.getElementById('bananaName');
+bananaimg = document.createElement('img')
+bananaimg.src = 'https://media.istockphoto.com/id/172876004/photo/banana-wallpaper.jpg?s=612x612&w=0&k=20&c=DjUIq77Fh3ljde_WJNwYl17e86VxMUpOwYiVL2XJo9U='
+banana.append(bananaimg);
+bananaimg.style.width = '200px';
+bananaimg.style.height = '245px';
+bananaimg.style.borderRadius = '25px';
+bananaimg.style.border = '2px solid red';
 
-const melon = document.getElementById('melon');
-     melon.style.width = '200px';
-     melon.style.height = '245px';
-     melon.style.borderRadius = '25px';
-     melon.style.border = '2px solid red';
+const melon = document.getElementById('melonName');
+melonName = document.createElement('img')
+melonName.src = 'https://www.everwilde.com/media//0800/resized/VWATCRS-A-Crimson-Sweet-Watermelon-Seeds_medium.jpg'
+melon.append(melonName);
+melonName.style.width = '200px';
+melonName.style.height = '245px';
+melonName.style.borderRadius = '25px';
+melonName.style.border = '2px solid red';
 
-const onion = document.getElementById('onion');
-     onion.style.width = '220px';
-     onion.style.height = '245px';
-     onion.style.borderRadius = '25px';
-     onion.style.border = '2px solid green';
+const onion = document.getElementById('onionName');
+onionName = document.createElement('img')
+onionName.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6V6LfVaO8un4F_nh3w7XJt96O4bm9DzdIBalIhfIlDm_yR-RhgPrJr0lnTOdNN3mTdLU&usqp=CAU'
+onion.append(onionName);
+onionName.style.width = '220px';
+onionName.style.height = '245px';
+onionName.style.borderRadius = '25px';
+onionName.style.border = '2px solid green';
 
-const tomato = document.getElementById('tomato');
-     tomato.style.width = '220px';
-     tomato.style.height = '245px';
-     tomato.style.borderRadius = '25px';
-     tomato.style.border = '2px solid green';
+const tomato = document.getElementById('tomatoName');
+tomatoName = document.createElement('img')
+tomatoName.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgOzWOh8PxlBvjLVRa_-45hqOSFB_S9PVp9Q&s'
+tomato.append(tomatoName);
+tomatoName.style.width = '220px';
+tomatoName.style.height = '245px';
+tomatoName.style.borderRadius = '25px';
+tomatoName.style.border = '2px solid green';
 
-const kales = document.getElementById('kales');
-     kales.style.width = '220px';
-     kales.style.height = '245px';
-     kales.style.borderRadius = '25px';
-     kales.style.border = '2px solid green';
+const kales = document.getElementById('kalesName');
+kalesName = document.createElement('img')
+kalesName.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRApSAG4U-oSkPr7gmSLSB7uJvZE6_ofL4P4A&s'
+kales.append(kalesName);
+kalesName.style.width = '220px';
+kalesName.style.height = '245px';
+kalesName.style.borderRadius = '25px';
+kalesName.style.border = '2px solid green';
 
 
 const footer = document.getElementById('footer');
@@ -112,10 +130,37 @@ const newParagraph = document.createElement('p');
 
 footer.appendChild(newParagraph);
 newParagraph.textContent = 'Get to buy fresh and clean vegetables and fruits!!!';
-newParagraph.setAttribute('class','new-paragraph');
+newParagraph.setAttribute('class', 'new-paragraph');
 newParagraph.style.color = 'green';
 newParagraph.style.fontSize = '30px';
 newParagraph.style.textAlign = 'center';
 newParagraph.style.backgroundColor = 'black';
 newParagraph.style.padding = '12px';
+
+
+const clickOnButton = document.getElementById('click-on-button');
+
+clickOnButton.addEventListener('click', ()=>{
+    clickOnButton.textContent = "Taste Now!!!";
+    clickOnButton.style.backgroundColor = "green";
+
+});
+
+clickOnButton.onclick = () => {
+    subtitle.textContent = "Not only sweet, but fruits are very energizing. Taste Now!!! ";
+};
+
+
+const clickButton = document.getElementById('click-button');
+
+clickButton.addEventListener('click', ()=>{
+    clickButton.textContent = "Try Now!!";
+    clickButton.style.backgroundColor = "green";
+
+});
+
+clickButton.onclick = () => {
+    subheading.textContent = "Vegetables are very nutritious, Let us Eat Healthy!!!";
+};
+
 
